@@ -1,0 +1,99 @@
+@charset "utf-8";
+html, .root {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.container {
+  width: 100%;
+  padding: 59px 10px;
+  @media only screen and (max-width : 700px) {
+    padding: 21px 10px 14px 10px;
+  }
+  @media only screen and (max-width : 400px) {
+    padding: 14px 10px 0px 10px;
+  }
+}
+
+.title-container {
+  display: block;
+  padding-bottom: 14px;
+}
+
+h1 {
+  font-family: 'Bungee', arial, sans-serif;
+  text-align: center;
+  font-size: 95px;
+  line-height: 63px;
+  margin-top: 21px;
+  margin-bottom: 42px;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  @media only screen and (max-width : 700px) {
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+    font-size: 59px;
+    line-height: 63px;
+    margin-top: 21px;
+    margin-bottom: 12px;
+  }
+  @media only screen and (max-width : 400px) {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    font-size: 43px;
+    line-height: 42px;
+    margin-top: 21px;
+    margin-bottom: 8px;
+  }
+}
+
+h2 {
+  font-family: 'Barlow Semi Condensed', arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 21px;
+  @media only screen and (max-width : 400px) {
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    font-size: 10px;
+    line-height: 21px;
+    margin-bottom: 21px;
+    letter-spacing: 5px;
+  }
+}
+
+iframe {
+  display: block;
+  width: 642px;
+  height: 483px;
+  margin: 0 auto;
+  border: 1px solid #fafafa;
+  @media only screen and (max-width : 700px) {
+    width: 100%;
+    height: 483px;
+  }
+  @media only screen and (max-width : 400px) {
+    width: 100%;
+    height: 483px;
+  }
+}
+
+iframe html body img {
+  @media only screen and (max-width : 700px) {
+    width: 500px;
+    height: 483px;
+  }
+  @media only screen and (max-width : 400px) {
+    width: 350px;
+    height: 483px;
+  }
+}
