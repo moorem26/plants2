@@ -21,23 +21,38 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  width: 700px;
-}
-
-.title-container {
-  padding: 56px 0px;
-  display: block;
+  width: 100%;
+  padding: 14px 10px;
+  @media only screen and (max-width : 700px) {
+    padding: 14px 10px 14px 10px;
+  }
+  @media only screen and (max-width : 400px) {
+    padding: 14px 10px 0px 10px;
+  }
 }
 
 h1 {
   font-family: 'Bungee', arial, sans-serif;
   text-align: center;
-  font-size: 95px;
+  font-size: 76px;
   line-height: 63px;
   margin-top: 21px;
-  margin-bottom: 42px;
+  margin-bottom: 21px;
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  @media only screen and (max-width : 700px) {
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+    font-size: 59px;
+    line-height: 63px;
+    margin-top: 21px;
+    margin-bottom: 12px;
+  }
+  @media only screen and (max-width : 400px) {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    font-size: 37px;
+    line-height: 42px;
+    margin-top: 21px;
+    margin-bottom: 4px;
+  }
 }
 
 h2 {
@@ -45,13 +60,46 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2)
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 37px;
+  @media only screen and (max-width : 700px) {
+    margin-bottom: 21px;
+    letter-spacing: 8px;
+  }
+  @media only screen and (max-width : 400px) {
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+    font-size: 12px;
+    line-height: 21px;
+    margin-bottom: 21px;
+    letter-spacing: 5px;
+  }
 }
 
 iframe {
   display: block;
-  width: 642px;
-  height: 483px;
+  max-width: 1280px;
+  width: 100%;
+  height: 720px;
   margin: 0 auto;
   border: 1px solid #fafafa;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  @media only screen and (max-width : 700px) {
+    width: 100%;
+    height: 600px;
+  }
+  @media only screen and (max-width : 400px) {
+    height: 483px;
+  }
+}
+
+iframe html body img {
+  @media only screen and (max-width : 700px) {
+    width: 500px;
+    height: 483px;
+  }
+  @media only screen and (max-width : 400px) {
+    width: 350px;
+    height: 483px;
+  }
 }
